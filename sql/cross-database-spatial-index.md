@@ -1,6 +1,6 @@
 # Using a spatial index with an attached database
 
-SpatiaLite's spatial index is both weird and essential. Weird, because you have to explicitly search it using a subquery, and essential because it speeds up spatial queries by an order of magnitude. [This query](https://alltheplaces-datasette.fly.dev/alltheplaces/dunkin_in_suffolk) is a good example.
+SpatiaLite's [spatial index](https://www.gaia-gis.it/fossil/libspatialite/wiki?name=SpatialIndex) is both weird and essential. Weird, because you have to explicitly search it using a subquery, and essential because it speeds up spatial queries by an order of magnitude. [This query](https://alltheplaces-datasette.fly.dev/alltheplaces/dunkin_in_suffolk) is a good example.
 
 SQLite _also_ lets you [attach one database to another](https://www.sqlite.org/lang_attach.html) (because they're just files) and search both. This can get useful in keeping data organized and partitioned. [Datasette has built-in support for this](https://docs.datasette.io/en/stable/sql_queries.html#cross-database-queries).
 
